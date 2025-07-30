@@ -229,19 +229,31 @@ post-processing module, and a flight controller mounted on a drone.
       <div class="column is-full">
         <div class="content has-text-centered">
           <h2 class="title is-3">Results</h2>
-          <h5 class="title is-5">
-            Real-world experiments comparison with ICP and ICO learning mechanisms.
-          </h5>
+          <p>
+            The results demonstrate the effectiveness of the proposed system in both simulation and real-world environments.
+          </p>
         </div>
       </div>
     </div>
 
-    <h3 class="title is-6 has-text-centered">ICO and ICP Real-World Comparison</h3>
+    
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <div class="video-container">
-          <!-- YouTube Video -->
+        <h3 class="title is-6 has-text-centered">ICO and ICP simulation comparison</h3>
+        <!-- YouTube Video 1 -->
+        <div class="video-container" style="margin-bottom: 1rem;">
+          <iframe width="100%" height="400" 
+                  src="https://www.youtube.com/embed/x7GF5ijNlLQ" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+          </iframe>
+        </div>
+
+        <h3 class="title is-6 has-text-centered">ICO and ICP real-world comparison</h3>
+        <!-- YouTube Video 2 -->
+        <div class="video-container" style="margin-bottom: 1rem;">
           <iframe width="100%" height="400" 
                   src="https://www.youtube.com/embed/h2mPJGZBKG0" 
                   frameborder="0" 
@@ -250,18 +262,23 @@ post-processing module, and a flight controller mounted on a drone.
           </iframe>
         </div>
 
-        <div class=" content has-text-justified">
+        <!-- Explanation Text -->
+        <div class="content" style="text-align: justify;">
           <p>
             The video demonstrates the performance of the proposed adaptive neural control system in real-world scenarios, comparing the ICO and ICP learning mechanisms. The drone successfully navigates through various obstacles, showcasing its ability to adapt its speed and maneuver effectively.
           </p>
 
-          <h3 class="title is-6 has-text-centered">ICO and ICP Real-World Comparison</h3>
-        <!-- Image Below Video -->
-        <figure class="image is-centered" style="margin-top: 1.5rem;">
-        <img src="static/images/3_icp_ico.png" 
-        alt="ICO vs ICP comparison">
-        </figure>
-          This graph illustrates the differences in performance between the ICO and ICP learning mechanisms in real-world scenarios. The drone's predictive weight is represented in both ICO and ICP, showing how the ICP mechanism allows for more adaptive behavior. The ICO's weight is only increased, while the ICP's weight is updated based on the drone's experiences, leading to improved obstacle avoidance and speed adaptation.
+          <!-- Image -->
+          <h3 class="title is-6 has-text-centered">ICO and ICP Real-World Comparison Graph</h3>
+          <figure class="image" style="display: flex; justify-content: center; margin-top: 1.5rem;">
+            <img src="static/images/3_icp_ico.png" alt="ICO vs ICP comparison" style="max-width: 85%; height: auto;">
+          </figure>
+
+          <p style="margin-top: 1rem;">
+            This graph illustrates the differences in performance between the ICO and ICP learning mechanisms in real-world scenarios. The drone's predictive weight is represented in both ICO and ICP, showing how the ICP mechanism allows for more adaptive behavior. The ICO's weight is only increased, while the ICP's weight is updated based on the drone's experiences, leading to improved obstacle avoidance and speed adaptation.
+          </p>
+        </div>
+
       </div>
     </div>
   </div>
